@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote | PATINHASLOVE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">PATINHAS<span>LOVE</span> 🐾</a>
+    <nav class="navbar">
+        <a href="index.html">Início</a>
+        <a href="adote.html" class="active">Adote</a>
+        <a href="match.html">Match Pet</a>
+        <a href="historias.html">Histórias</a>
+        <a href="sobre.html">Sobre nós</a>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <h1>Encontre seu novo melhor amigo ❤️</h1>
+        <p>Conheça nossos animais disponíveis para adoção.</p>
+    </section>
+
+    <section class="section">
+        <div class="pet-tools">
+            <input type="search" id="buscaPet" placeholder="🔎 Pesquisar pelo nome...">
+
+            <select id="filtroPet">
+                <option value="todos">Todos os animais</option>
+                <option value="cachorro">Cachorros</option>
+                <option value="gato">Gatos</option>
+                <option value="outro">Outros</option>
+            </select>
+
+            <label class="favorite-filter">
+                <input type="checkbox" id="mostrarFavoritos">
+                Mostrar apenas favoritos ❤️
+            </label>
+        </div>
+
+        <p id="contadorPets" class="pet-counter"></p>
+
+        <div class="pets-container" id="listaPets">
+
+            <article class="pet-card" id="thor" data-nome="thor" data-tipo="cachorro">
+                <button class="favorite-btn" type="button" aria-label="Adicionar Thor aos favoritos" aria-pressed="false">♡</button>
+                <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=600" alt="Cachorro Thor">
+                <div class="pet-info">
+                    <h3>Thor</h3>
+                    <p>🐶 Cachorro | 2 anos</p>
+                    <p>Brincalhão, carinhoso e cheio de energia. Adora passeios e companhia!</p>
+                    <a href="mailto:contato@petlove.com?subject=Interesse%20na%20ado%C3%A7%C3%A3o%20do%20Thor" class="btn">Tenho interesse</a>
+                </div>
+            </article>
+
+            <article class="pet-card" id="max" data-nome="max" data-tipo="cachorro">
+                <button class="favorite-btn" type="button" aria-label="Adicionar Max aos favoritos" aria-pressed="false">♡</button>
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600" alt="Cachorro Max">
+                <div class="pet-info">
+                    <h3>Max</h3>
+                    <p>🐶 Cachorro | 3 anos</p>
+                    <p>Um companheiro tranquilo, muito amigável e que adora receber carinho.</p>
+                    <a href="mailto:contato@petlove.com?subject=Interesse%20na%20ado%C3%A7%C3%A3o%20do%20Max" class="btn">Tenho interesse</a>
+                </div>
+            </article>
+
+            <article class="pet-card" id="luna" data-nome="luna" data-tipo="gato">
+                <button class="favorite-btn" type="button" aria-label="Adicionar Luna aos favoritos" aria-pressed="false">♡</button>
+                <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600" alt="Gata Luna">
+                <div class="pet-info">
+                    <h3>Luna</h3>
+                    <p>🐱 Gata | 1 ano</p>
+                    <p>Curiosa, independente e muito carinhosa quando ganha confiança.</p>
+                    <a href="mailto:contato@petlove.com?subject=Interesse%20na%20ado%C3%A7%C3%A3o%20da%20Luna" class="btn">Tenho interesse</a>
+                </div>
+            </article>
+
+            <article class="pet-card" id="floquinho" data-nome="floquinho" data-tipo="outro">
+                <button class="favorite-btn" type="button" aria-label="Adicionar Floquinho aos favoritos" aria-pressed="false">♡</button>
+                <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=600" alt="Coelho Floquinho">
+                <div class="pet-info">
+                    <h3>Floquinho</h3>
+                    <p>🐰 Coelho | 1 ano</p>
+                    <p>Fofo, curioso e delicado. Precisa de um ambiente seguro e acolhedor.</p>
+                    <a href="mailto:contato@petlove.com?subject=Interesse%20na%20ado%C3%A7%C3%A3o%20do%20Floquinho" class="btn">Tenho interesse</a>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="nenhumPet" class="no-results" hidden>Nenhum animal encontrado. Tente outra pesquisa! 🐾</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <a href="index.html" class="logo">PATINHAS<span>LOVE</span> 🐾</a>
+    <p>© 2026 PATINHASLOVE. Todos os direitos reservados.
+        Feito por Camila e Marissol.
+    </p>
+</footer>
+
+</body>
+</html>

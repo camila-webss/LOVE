@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Pet | PATINHASLOVE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">PATINHAS<span>LOVE</span> 🐾</a>
+    <nav class="navbar">
+        <a href="index.html">Início</a>
+        <a href="adote.html">Adote</a>
+        <a href="match.html" class="active">Match Pet</a>
+        <a href="historias.html">Histórias</a>
+        <a href="sobre.html">Sobre nós</a>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <h1>Descubra seu Match Pet! 💗</h1>
+        <p>Responda às perguntas e descubra qual pet pode combinar com sua rotina.</p>
+    </section>
+
+    <section class="section">
+        <form id="matchForm" class="match-form">
+
+            <fieldset>
+                <legend>1. Onde você mora?</legend>
+                <label><input type="radio" name="casa" value="casa" required> Casa</label>
+                <label><input type="radio" name="casa" value="apartamento"> Apartamento</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Como é sua rotina?</legend>
+                <label><input type="radio" name="rotina" value="tempo" required> Tenho bastante tempo livre</label>
+                <label><input type="radio" name="rotina" value="corrida"> Tenho uma rotina corrida</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Qual tipo de companhia você prefere?</legend>
+                <label><input type="radio" name="companhia" value="ativo" required> Um pet ativo e brincalhão</label>
+                <label><input type="radio" name="companhia" value="tranquilo"> Um pet mais tranquilo</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Você já teve um animal de estimação?</legend>
+                <label><input type="radio" name="experiencia" value="sim" required> Sim</label>
+                <label><input type="radio" name="experiencia" value="nao"> Não</label>
+            </fieldset>
+
+            <button type="submit" class="btn">Descobrir meu Match ❤️</button>
+        </form>
+
+        <div id="resultadoMatch" class="match-result" aria-live="polite" hidden></div>
+    </section>
+</main>
+
+<footer class="footer">
+    <a href="index.html" class="logo">PATINHAS<span>LOVE</span> 🐾</a>
+    <p>© 2026 PATINHASLOVE. Todos os direitos reservados.</p>
+Feito por Camila e Marissol.
+</footer>
+
+</body>
+</html>
